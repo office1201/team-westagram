@@ -10,6 +10,7 @@ class LoginTaehyun extends Component {
     this.state = {
       id: "",
       password: "",
+      isActiveBtn: false,
     };
   }
 
@@ -25,17 +26,28 @@ class LoginTaehyun extends Component {
     });
   };
 
+  checkLogin = () => {
+    this.state.id.indexOf("@") && this.state.password.length >= 5 ? this.setState({ isActiveBtn: true }) : this.setState({ isActiveBtn: false });
+  };
+
+  goToMain = () => {
+    this.props.history.push("/main-taehyun");
+  };
+
   render() {
+    console.log(this.state);
     return (
       <>
         <section id="loginForm">
           <div class="loginForm__container">
             <h1 class="loginForm__logo">Westagram</h1>
             <div class="loginForm__input">
-              <input onChange={this.handleIdInput} class="input-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
-              <input onChange={this.handlePwInput} class="input-pw" type="password" placeholder="비밀번호" />
+              <input onChange={this.handleIdInput} onKeyUp={this.checkLogin} class="input-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+              <input onChange={this.handlePwInput} onKeyUp={this.checkLogin} class="input-pw" type="password" placeholder="비밀번호" />
             </div>
-            <button class="loginForm__btn">로그인</button>
+            <button onClick={this.goToMain} className={this.state.isActiveBtn ? "loginForm__btn-enable" : "loginForm__btn-disable"}>
+              로그인
+            </button>
             <div class="loginForm__divide">
               <div class="loginForm__divide__line"></div>
               <h6 class="loginForm__divide__text">또는</h6>
