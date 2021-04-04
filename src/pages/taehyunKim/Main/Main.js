@@ -1,8 +1,45 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
+import Comment from "./Comment";
 import "./Main.scss";
 
 class MainTaehyun extends Component {
+  constructor() {
+    super();
+    this.state = {
+      comment: "",
+      commentArr: [{ str: "" }],
+      isActiveBtn: false,
+    };
+  }
+
+  handleCommentInput = (e) => {
+    this.setState({
+      comment: e.target.value,
+    });
+  };
+
+  addCommentList = () => {
+    const comment = { str: this.state.comment };
+    this.setState({
+      commentArr: this.state.commentArr.concat(comment),
+      comment: "",
+    });
+  };
+
+  clickBtn = (e) => {
+    if (e.key === "Backspace" || this.state.comment.length === 0) {
+      return;
+    } else if (e.key === "Enter") {
+      this.addCommentList();
+    }
+  };
+
+  checkComment = () => {
+    this.state.comment.length > 0 ? this.setState({ isActiveBtn: true }) : this.setState({ isActiveBtn: false });
+  };
   render() {
+    console.log(this.state);
     return (
       <>
         <nav id="navbar">
@@ -160,13 +197,16 @@ class MainTaehyun extends Component {
                             <span>
                               <strong class="add-comment-list">lin_dk2</strong>😍😍😍
                             </span>
+                            <Comment commentInput={this.state.commentArr} />
                             <span class="add-comment-list-active"></span>
                           </li>
                         </ul>
                         <span class="feed__content-comment-ago">3일 전</span>
                         <div class="feed__content__chat">
-                          <input type="text" class="feed__content__chat-input" placeholder="댓글 달기..." />
-                          <button class="feed__content__chat-button">게시</button>
+                          <input onChange={this.handleCommentInput} onKeyUp={this.clickBtn} onKeyDown={this.checkComment} type="text" class="feed__content__chat-input" placeholder="댓글 달기..." />
+                          <button onClick={this.addCommentList} className={this.state.isActiveBtn ? "feed__content__chat-button" : "feed__content__chat-button-change-btn"}>
+                            게시
+                          </button>
                           <div class="feed__content__chat__line"></div>
                         </div>
                       </div>
@@ -315,4 +355,4 @@ class MainTaehyun extends Component {
   }
 }
 
-export default MainTaehyun;
+export default withRouter(MainTaehyun);

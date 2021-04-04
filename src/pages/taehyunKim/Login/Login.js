@@ -15,15 +15,11 @@ class LoginTaehyun extends Component {
   }
 
   handleIdInput = (e) => {
-    this.setState({
-      id: e.target.value,
-    });
+    this.setState({ id: e.target.value });
   };
 
   handlePwInput = (e) => {
-    this.setState({
-      password: e.target.value,
-    });
+    this.setState({ password: e.target.value });
   };
 
   checkLogin = () => {
@@ -35,7 +31,6 @@ class LoginTaehyun extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <>
         <section id="loginForm">

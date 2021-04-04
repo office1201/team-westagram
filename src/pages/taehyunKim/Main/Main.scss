@@ -388,12 +388,15 @@ span {
   color: var(--color-blue);
   font-size: var(--font-size-medium);
   font-weight: 600;
-  opacity: 0.3;
+  opacity: 1;
   cursor: default;
 }
 
-.change-btn {
-  opacity: 1;
+.feed__content__chat-button-change-btn {
+  color: var(--color-blue);
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+  opacity: 0.3;
   cursor: pointer;
 }
 
