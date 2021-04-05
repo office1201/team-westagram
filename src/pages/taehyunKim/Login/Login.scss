@@ -64,92 +64,86 @@ h1 {
   padding: 10px 40px 0px 40px;
   background-color: var(--color-white);
   border: 1px solid var(--color-grey);
-}
 
-.loginForm__container {
-  display: flex;
-  flex-direction: column;
-}
+  .loginForm__container {
+    display: flex;
+    flex-direction: column;
 
-.loginForm__logo {
-  margin: 20px 0px 30px 0px;
-  font-size: 40px;
-  text-align: center;
-}
+    .loginForm__logo {
+      margin: 20px 0px 30px 0px;
+      font-size: 40px;
+      text-align: center;
+    }
+    .loginForm__btn-enable {
+      margin-top: 10px;
+      padding: 6px 0px;
+      color: var(--color-white);
+      background-color: var(--color-blue);
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
 
-.loginForm__btn-enable {
-  margin-top: 10px;
-  padding: 6px 0px;
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  outline: none;
-  cursor: pointer;
-}
+    .loginForm__btn-disable {
+      margin-top: 10px;
+      padding: 6px 0px;
+      color: var(--color-white);
+      background-color: var(--color-white-blue);
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+    .loginForm__divide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .loginForm__divide__line {
+        width: 100px;
+        border-bottom: 1px solid var(--color-grey);
+      }
 
-.loginForm__btn-disable {
-  margin-top: 10px;
-  padding: 6px 0px;
-  color: var(--color-white);
-  background-color: var(--color-white-blue);
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  outline: none;
-  cursor: pointer;
-}
+      .loginForm__divide__text {
+        margin: 15px 18px;
+        color: var(--color-dark-grey);
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .change-btn {
+        background-color: var(--color-blue);
+      }
+    }
+    .loginForm__facebook {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      color: var(--color-dark-blue);
+    }
 
-.loginForm__divide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .loginForm__facebook__icon {
+      margin-right: 8px;
+      font-size: 18px;
+    }
 
-.loginForm__divide__line {
-  width: 100px;
-  border-bottom: 1px solid var(--color-grey);
-}
+    .loginForm__facebook__text {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .loginForm__forget {
+      display: flex;
+      justify-content: center;
+    }
 
-.loginForm__divide__text {
-  margin: 15px 18px;
-  color: var(--color-dark-grey);
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.change-btn {
-  background-color: var(--color-blue);
-}
-
-.loginForm__forget {
-  display: flex;
-  justify-content: center;
-}
-
-.loginForm__forget__text {
-  position: absolute;
-  bottom: 15px;
-  color: var(--color-dark-blue);
-  font-size: 11px;
-}
-
-.loginForm__facebook {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  color: var(--color-dark-blue);
-}
-
-.loginForm__facebook__icon {
-  margin-right: 8px;
-  font-size: 18px;
-}
-
-.loginForm__facebook__text {
-  font-size: 14px;
-  font-weight: 700;
+    .loginForm__forget__text {
+      position: absolute;
+      bottom: 15px;
+      color: var(--color-dark-blue);
+      font-size: 11px;
+    }
+  }
 }

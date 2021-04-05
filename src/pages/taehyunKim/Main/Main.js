@@ -39,7 +39,6 @@ class MainTaehyun extends Component {
     this.state.comment.length > 0 ? this.setState({ isActiveBtn: true }) : this.setState({ isActiveBtn: false });
   };
   render() {
-    console.log(this.state);
     return (
       <>
         <nav id="navbar">
