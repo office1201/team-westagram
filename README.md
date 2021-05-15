@@ -22,7 +22,7 @@
   - id, pw 입력 시 로그인 버튼 활성화 기능
   - 댓글 내용 입력 후 Enter press, 혹은 게시 버튼 클릭 시 댓글 추가 기능
 
-![image]()
+<img width="649" alt="스크린샷 2021-05-15 오후 11 46 30" src="https://user-images.githubusercontent.com/75716128/118368850-8644fc80-b5dd-11eb-9179-aba219ab050a.png">
 
 ## Scripts
 
