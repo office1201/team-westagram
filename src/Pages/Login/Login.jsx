@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import "./Login.scss";
-import "../../../Styles/reset.scss";
-import "../../../Styles/common.scss";
 
-class LoginTaehyun extends Component {
+class Login extends Component {
   constructor() {
     super();
     this.state = {
@@ -37,7 +35,13 @@ class LoginTaehyun extends Component {
           <div class="loginForm__container">
             <h1 class="loginForm__logo">Westagram</h1>
             <div class="loginForm__input">
-              <input onChange={this.handleIdInput} onKeyUp={this.checkLogin} class="input-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+              <input
+                onChange={this.handleIdInput}
+                onKeyUp={this.checkLogin}
+                class="input-id"
+                type="text"
+                placeholder="전화번호, 사용자 이름 또는 이메일"
+              />
               <input onChange={this.handlePwInput} onKeyUp={this.checkLogin} class="input-pw" type="password" placeholder="비밀번호" />
             </div>
             <button onClick={this.goToMain} className={this.state.isActiveBtn ? "loginForm__btn-enable" : "loginForm__btn-disable"}>
@@ -62,4 +66,4 @@ class LoginTaehyun extends Component {
   }
 }
 
-export default withRouter(LoginTaehyun);
+export default withRouter(Login);

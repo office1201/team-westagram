@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import Comment from "./Comment";
 import "./Main.scss";
 
-class MainTaehyun extends Component {
+class Main extends Component {
   constructor() {
     super();
     this.state = {
@@ -73,49 +73,73 @@ class MainTaehyun extends Component {
                     <ul class="feeds__list">
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border-active">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/95898509_528325404737365_8466554780179759104_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=ecMCg5FJqyYAX-xlDym&ccb=7-4&oh=c210e334bc7e6e4c7c9df8549a9257e1&oe=60896AC7&_nc_sid=48a2a6" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/95898509_528325404737365_8466554780179759104_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=ecMCg5FJqyYAX-xlDym&ccb=7-4&oh=c210e334bc7e6e4c7c9df8549a9257e1&oe=60896AC7&_nc_sid=48a2a6"
+                          />
                         </div>
                         <span class="feeds__list__item-text-active">haejun_kim</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border-active">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/47581322_331313240788424_7580673034705436672_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=siebsZtcCf4AX-P5ljv&ccb=7-4&oh=b8ea9f43f5d40bc18b08e4d107123c18&oe=608A6036&_nc_sid=48a2a6" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/47581322_331313240788424_7580673034705436672_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=siebsZtcCf4AX-P5ljv&ccb=7-4&oh=b8ea9f43f5d40bc18b08e4d107123c18&oe=608A6036&_nc_sid=48a2a6"
+                          />
                         </div>
                         <span class="feeds__list__item-text">han_ye_seul_</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/95382934_253563445794897_5565488101842747392_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=PbMxG28z9oAAX9EETKe&ccb=7-4&oh=1fa154c9f1976c091c7b941d6962e7db&oe=6089DE8E&_nc_sid=276363" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/95382934_253563445794897_5565488101842747392_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=PbMxG28z9oAAX9EETKe&ccb=7-4&oh=1fa154c9f1976c091c7b941d6962e7db&oe=6089DE8E&_nc_sid=276363"
+                          />
                         </div>
                         <span class="feeds__list__item-text">for10_in</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border-active">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/13381296_1775871565982833_979887760_a.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=1oNhrNugUV0AX_DPYSu&ccb=7-4&oh=9016d48f87dc53ddd320f71988c2c612&oe=6088AEA0&_nc_sid=7bff83" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/13381296_1775871565982833_979887760_a.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=1oNhrNugUV0AX_DPYSu&ccb=7-4&oh=9016d48f87dc53ddd320f71988c2c612&oe=6088AEA0&_nc_sid=7bff83"
+                          />
                         </div>
                         <span class="feeds__list__item-text">ryu_focus</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border-active">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/68654150_388821821824230_6510542380553207808_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Cnry9Lsr2BYAX9AmurX&ccb=7-4&oh=cb2dbed8ddc0f026443adc187809c746&oe=60887B1D&_nc_sid=7bff83" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/68654150_388821821824230_6510542380553207808_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Cnry9Lsr2BYAX9AmurX&ccb=7-4&oh=cb2dbed8ddc0f026443adc187809c746&oe=60887B1D&_nc_sid=7bff83"
+                          />
                         </div>
                         <span class="feeds__list__item-text">parkssun</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/135264055_755955731772974_7670810148149419680_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=_5Pvq5Tx6XsAX83wRuQ&ccb=7-4&oh=4a2d7e79ee6b83c9335c123373228be6&oe=6088972E&_nc_sid=7bff83" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/135264055_755955731772974_7670810148149419680_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=_5Pvq5Tx6XsAX83wRuQ&ccb=7-4&oh=4a2d7e79ee6b83c9335c123373228be6&oe=6088972E&_nc_sid=7bff83"
+                          />
                         </div>
                         <span class="feeds__list__item-text">heodak81</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border-active">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/131898777_2805821883039596_3219330807167296502_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=sLH0l4zvH_EAX8h_z8h&ccb=7-4&oh=28f83f1f1ca550b855e8d2a62ef2f74e&oe=6089214E&_nc_sid=7bff83" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/131898777_2805821883039596_3219330807167296502_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=sLH0l4zvH_EAX8h_z8h&ccb=7-4&oh=28f83f1f1ca550b855e8d2a62ef2f74e&oe=6089214E&_nc_sid=7bff83"
+                          />
                         </div>
                         <span class="feeds__list__item-text">pkalbum</span>
                       </li>
                       <li class="feeds__list__item">
                         <div class="feeds__list__item-border">
-                          <img class="feeds__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/149732392_846911982556510_6697391372424355186_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=csoOAh5Z-GYAX9uruIS&ccb=7-4&oh=54ec160ba20735d226bbb9c81385d395&oe=608AAEDD&_nc_sid=7bff83" />
+                          <img
+                            class="feeds__list__item-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/149732392_846911982556510_6697391372424355186_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=csoOAh5Z-GYAX9uruIS&ccb=7-4&oh=54ec160ba20735d226bbb9c81385d395&oe=608AAEDD&_nc_sid=7bff83"
+                          />
                         </div>
                         <span class="feeds__list__item-text">minse0_96</span>
                       </li>
@@ -128,7 +152,11 @@ class MainTaehyun extends Component {
                       <div class="feed__header__container">
                         <div class="feed__header__wrapper">
                           <div class="feed__header__logo">
-                            <img class="feed__header__logo-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/158176911_941264666683660_5787569050369574428_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G3VAzXPmOHoAX8o_8OO&ccb=7-4&oh=269f355c5ed4f4e513d4bd0b80302756&oe=608A1B24&_nc_sid=7bff83" alt="nelebuschard" />
+                            <img
+                              class="feed__header__logo-img"
+                              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/158176911_941264666683660_5787569050369574428_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G3VAzXPmOHoAX8o_8OO&ccb=7-4&oh=269f355c5ed4f4e513d4bd0b80302756&oe=608A1B24&_nc_sid=7bff83"
+                              alt="nelebuschard"
+                            />
                           </div>
                           <div class="feed__header__text">
                             <a href="#">
@@ -144,7 +172,11 @@ class MainTaehyun extends Component {
                         </div>
                       </div>
                     </header>
-                    <img class="feed__img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/163551120_1204210813369375_7695781743787339868_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=wSSg7Eyokh8AX85TnM7&ccb=7-4&oh=5268a1531c23481c3e303fde35ada070&oe=608A44AE&_nc_sid=4f375e" alt="피드 이미지입니다." />
+                    <img
+                      class="feed__img"
+                      src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/163551120_1204210813369375_7695781743787339868_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=wSSg7Eyokh8AX85TnM7&ccb=7-4&oh=5268a1531c23481c3e303fde35ada070&oe=608A44AE&_nc_sid=4f375e"
+                      alt="피드 이미지입니다."
+                    />
                     <div class="feed__menu">
                       <div class="feed__menu__container">
                         <div class="feed__menu__wrapper">
@@ -156,7 +188,11 @@ class MainTaehyun extends Component {
                             </li>
                             <li class="feed__menu__list-item">
                               <svg aria-label="댓글" class="_8-yf5" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
-                                <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                                <path
+                                  clip-rule="evenodd"
+                                  d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                  fill-rule="evenodd"
+                                ></path>
                               </svg>
                             </li>
                             <li class="feed__menu__list-item">
@@ -202,8 +238,18 @@ class MainTaehyun extends Component {
                         </ul>
                         <span class="feed__content-comment-ago">3일 전</span>
                         <div class="feed__content__chat">
-                          <input onChange={this.handleCommentInput} onKeyUp={this.clickBtn} onKeyDown={this.checkComment} type="text" class="feed__content__chat-input" placeholder="댓글 달기..." />
-                          <button onClick={this.addCommentList} className={this.state.isActiveBtn ? "feed__content__chat-button" : "feed__content__chat-button-change-btn"}>
+                          <input
+                            onChange={this.handleCommentInput}
+                            onKeyUp={this.clickBtn}
+                            onKeyDown={this.checkComment}
+                            type="text"
+                            class="feed__content__chat-input"
+                            placeholder="댓글 달기..."
+                          />
+                          <button
+                            onClick={this.addCommentList}
+                            className={this.state.isActiveBtn ? "feed__content__chat-button" : "feed__content__chat-button-change-btn"}
+                          >
                             게시
                           </button>
                           <div class="feed__content__chat__line"></div>
@@ -218,7 +264,10 @@ class MainTaehyun extends Component {
                   <div class="sidebar__wrapper">
                     <div class="sidebar__user">
                       <div class="sidebar__user__logo">
-                        <img class="sidebar__user-logo-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/164807560_952888125450516_7510156972160703983_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=7hp8SiIu5m0AX_-kSzb&ccb=7-4&oh=181d356d9ccaf83fd9cffed27ed6b412&oe=608A53D5&_nc_sid=7b02f1" />
+                        <img
+                          class="sidebar__user-logo-img"
+                          src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/164807560_952888125450516_7510156972160703983_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=7hp8SiIu5m0AX_-kSzb&ccb=7-4&oh=181d356d9ccaf83fd9cffed27ed6b412&oe=608A53D5&_nc_sid=7b02f1"
+                        />
                         <div class="sidebar__user-text">
                           <span>
                             <strong>nakiaathome</strong>
@@ -237,7 +286,10 @@ class MainTaehyun extends Component {
                         <li class="sidebar__friend__list__item">
                           <div>
                             <div>
-                              <img class="sidebar__friend__list__item-img-active" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/68710948_2353091111411348_4497464812049006592_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=aPn9CxrGgVAAX-BMx-v&ccb=7-4&oh=0d62b0aa421735c8a2714035da0c4f8f&oe=60886629&_nc_sid=a9513d" />
+                              <img
+                                class="sidebar__friend__list__item-img-active"
+                                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/68710948_2353091111411348_4497464812049006592_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=aPn9CxrGgVAAX-BMx-v&ccb=7-4&oh=0d62b0aa421735c8a2714035da0c4f8f&oe=60886629&_nc_sid=a9513d"
+                              />
                             </div>
                             <div class="sidebar__friend__list__item-text">
                               <span>
@@ -251,7 +303,10 @@ class MainTaehyun extends Component {
                         </li>
                         <li class="sidebar__friend__list__item">
                           <div>
-                            <img class="sidebar__friend__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/164056588_810082426256749_2969750331236833407_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=jmUudHmEFEIAX-xqucs&ccb=7-4&oh=e3baff73525fade8672f2fbccb7ac37d&oe=608860E0&_nc_sid=7bff83" />
+                            <img
+                              class="sidebar__friend__list__item-img"
+                              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/164056588_810082426256749_2969750331236833407_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=jmUudHmEFEIAX-xqucs&ccb=7-4&oh=e3baff73525fade8672f2fbccb7ac37d&oe=608860E0&_nc_sid=7bff83"
+                            />
                             <div class="sidebar__friend__list__item-text">
                               <span>
                                 <strong>kyliejenner</strong>
@@ -264,7 +319,10 @@ class MainTaehyun extends Component {
                         </li>
                         <li class="sidebar__friend__list__item">
                           <div>
-                            <img class="sidebar__friend__list__item-img-active" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/65302424_346059889400191_5999870605850050560_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MBOUUGjN5i8AX8nl2TX&ccb=7-4&oh=728a1b19406a9382af298c8d196cb90f&oe=608AB72C&_nc_sid=7bff83" />
+                            <img
+                              class="sidebar__friend__list__item-img-active"
+                              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/65302424_346059889400191_5999870605850050560_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MBOUUGjN5i8AX8nl2TX&ccb=7-4&oh=728a1b19406a9382af298c8d196cb90f&oe=608AB72C&_nc_sid=7bff83"
+                            />
                             <div class="sidebar__friend__list__item-text">
                               <span>
                                 <strong>brunomars</strong>
@@ -277,7 +335,10 @@ class MainTaehyun extends Component {
                         </li>
                         <li class="sidebar__friend__list__item">
                           <div>
-                            <img class="sidebar__friend__list__item-img" src="https://instagram.fixc1-2.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fixc1-2.fna.fbcdn.net&_nc_ohc=mhDR9_0DpXIAX85wQIj&ccb=7-4&oh=6125b628d90b979b3cfece279d293c37&oe=608B680F&_nc_sid=712cc3&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2-ccb7-4" />
+                            <img
+                              class="sidebar__friend__list__item-img"
+                              src="https://instagram.fixc1-2.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fixc1-2.fna.fbcdn.net&_nc_ohc=mhDR9_0DpXIAX85wQIj&ccb=7-4&oh=6125b628d90b979b3cfece279d293c37&oe=608B680F&_nc_sid=712cc3&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2-ccb7-4"
+                            />
                             <div class="sidebar__friend__list__item-text">
                               <span>
                                 <strong>ju_ni518</strong>
@@ -290,7 +351,10 @@ class MainTaehyun extends Component {
                         </li>
                         <li class="sidebar__friend__list__item">
                           <div>
-                            <img class="sidebar__friend__list__item-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/83035647_2647476825529923_24793544824717312_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=BFLWDwi3rroAX-w0BBp&ccb=7-4&oh=3a2dec60f0bb1c2e6f5bd529e5d05122&oe=608987A9&_nc_sid=7bff83" />
+                            <img
+                              class="sidebar__friend__list__item-img"
+                              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/83035647_2647476825529923_24793544824717312_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=BFLWDwi3rroAX-w0BBp&ccb=7-4&oh=3a2dec60f0bb1c2e6f5bd529e5d05122&oe=608987A9&_nc_sid=7bff83"
+                            />
                             <div class="sidebar__friend__list__item-text">
                               <span>
                                 <strong>sxxujinx</strong>
@@ -354,4 +418,4 @@ class MainTaehyun extends Component {
   }
 }
 
-export default withRouter(MainTaehyun);
+export default withRouter(Main);
