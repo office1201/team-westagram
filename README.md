@@ -18,11 +18,18 @@
   - React
 
 - Westagram - 이전 구현 사항
+
   - 로그인, 메인 페이지 레이아웃
   - id, pw 입력 시 로그인 버튼 활성화 기능
   - 댓글 내용 입력 후 Enter press, 혹은 게시 버튼 클릭 시 댓글 추가 기능
 
-<img width="649" alt="스크린샷 2021-05-15 오후 11 46 30" src="https://user-images.githubusercontent.com/75716128/118368850-8644fc80-b5dd-11eb-9179-aba219ab050a.png">
+- 🔥🔥개선된 점🔥🔥🔥
+
+  - 불필요한 `<a>` 태그 사용을 금하고 라우터의 기능을 사용
+  - `Input` 값을 받아오던 중복된 함수를 줄이고자 `계산된 속성명`을 활용, 함수를 합침
+  - `정규표현식`을 활용한 이메일 검증
+
+    <img width="649" alt="스크린샷 2021-05-15 오후 11 46 30" src="https://user-images.githubusercontent.com/75716128/118368850-8644fc80-b5dd-11eb-9179-aba219ab050a.png">
 
 ## Scripts
 

@@ -6,6 +6,16 @@ import "./Form.scss";
 import Button from "./Button";
 
 class Form extends Component {
+  state = {
+    email: "",
+    password: "",
+  };
+
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
     const { type, data } = this.props;
     return (
@@ -13,7 +23,14 @@ class Form extends Component {
         <Logo />
         <div className="Inputs">
           {data.map((input, idx) => (
-            <Input key={idx} type={input.type} text={input.text} />
+            <Input
+              key={idx}
+              type={input.type}
+              text={input.text}
+              value={this.state[input.type]}
+              handleChange={this.handleChange}
+              Validator={validator[input.type]}
+            />
           ))}
         </div>
         <Button type={type} />
@@ -35,3 +52,10 @@ class Form extends Component {
 }
 
 export default Form;
+
+const regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+
+const validator = {
+  email: (input) => input.match(regExp),
+  password: (input) => input.length >= 8,
+};
