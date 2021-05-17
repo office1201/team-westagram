@@ -8,13 +8,13 @@ class Input extends Component {
     return (
       <article className="Input">
         <input type={type} placeholder={text} name={type} onChange={handleChange} />
-        {Validator(value) ? <ValidCheck /> : <InvalidCheck />}
+        {Validator(value) ? <IsValid /> : <IsNotValid />}
       </article>
     );
   }
 }
 
-const ValidCheck = () => (
+const IsValid = () => (
   <div
     style={{
       width: "24px",
@@ -26,7 +26,7 @@ const ValidCheck = () => (
   />
 );
 
-const InvalidCheck = () => (
+const IsNotValid = () => (
   <div
     style={{
       width: "24px",

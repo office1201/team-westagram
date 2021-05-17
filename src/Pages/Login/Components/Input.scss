@@ -13,7 +13,15 @@
     background-color: $--color-white-grey;
 
     input {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      background-color: $--color-white-grey;
       border: none;
+    }
+
+    input::placeholder {
+      font-size: 12px;
     }
   }
 }

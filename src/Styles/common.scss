@@ -15,8 +15,8 @@ h1 {
   font-family: "Loved by the King", cursive;
 }
 
-input::placeholder {
-  font-size: 12px;
+input {
+  outline: none;
 }
 
 @mixin flex-center {
