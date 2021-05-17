@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* Variable(global) */
+/* Color */
+$--color-white: #ffffff;
+$--color-white-grey: #fafafa;
+$--color-grey: #dbdbdb;
+$--color-dark-grey: #8e8e8e;
+$--color-white-blue: #c0dffd;
+$--color-blue: #0095f6;
+$--color-dark-blue: #385185;
+
+/* Typography */
+h1 {
+  font-family: "Loved by the King", cursive;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
