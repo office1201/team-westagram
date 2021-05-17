@@ -1,0 +1,56 @@
+@import "../../../Styles/common.scss";
+
+.Form {
+  width: 375px;
+  padding: 32px 45px 48px;
+  background: $--color-white;
+  border: 1px solid $--color-grey;
+
+  .Divide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 100px;
+      border-bottom: 1px solid $--color-grey;
+    }
+    h6 {
+      margin: 15px 18px;
+      color: $--color-dark-grey;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  .Facebook {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: $--color-dark-blue;
+
+    i {
+      margin-right: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  .Forgot {
+    display: flex;
+    justify-content: center;
+
+    span {
+      margin-top: 15px;
+      color: $--color-dark-blue;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../Styles/common.scss";
+
+.Button {
+  text-align: center;
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px 0px;
+    color: $--color-white;
+    background-color: $--color-white-blue;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .isActive {
+    background-color: $--color-blue;
+  }
+}
