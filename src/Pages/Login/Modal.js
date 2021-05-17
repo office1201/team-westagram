@@ -8,7 +8,7 @@ export default class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        <Form type="signUp" data={signInData} />
+        <Form type="로그인" data={signInData} />
       </div>
     );
   }
