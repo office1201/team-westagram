@@ -4,15 +4,17 @@ import "./Input.scss";
 class Input extends Component {
   render() {
     const { type, text, value } = this.props;
-    const { handleChange, Validator } = this.props;
+    const { handleChange, validator } = this.props;
     return (
       <article className="Input">
         <input type={type} placeholder={text} name={type} onChange={handleChange} />
-        {Validator(value) ? <IsValid /> : <IsNotValid />}
+        {validator(value) ? <IsValid /> : <IsNotValid />}
       </article>
     );
   }
 }
+
+export default Input;
 
 const IsValid = () => (
   <div
@@ -37,5 +39,3 @@ const IsNotValid = () => (
     }}
   />
 );
-
-export default Input;

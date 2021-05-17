@@ -29,11 +29,11 @@ class Form extends Component {
               text={input.text}
               value={this.state[input.type]}
               handleChange={this.handleChange}
-              Validator={validator[input.type]}
+              validator={validator[input.type]}
             />
           ))}
         </div>
-        <Button type={type} />
+        <Button type={type} value={this.state} regExp={regExp} />
         <div className="Divide">
           <div></div>
           <h6>또는</h6>
