@@ -10,7 +10,7 @@ class Form extends Component {
     return (
       <FormLayout>
         <Logo />
-        <div>
+        <div className="Inputs">
           {data.map((input, idx) => (
             <Input key={idx} type={input.type} text={input.text} />
           ))}
