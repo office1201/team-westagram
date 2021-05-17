@@ -1,3 +1,5 @@
+@import "../../../Styles/common.scss";
+
 .Inputs {
   margin-top: 35px;
 
@@ -5,6 +7,13 @@
     display: flex;
     align-items: center;
     height: 44px;
-    border-radius: 6px;
+    margin-bottom: 6px;
+    border: 1px solid $--color-grey;
+    border-radius: 4px;
+    background-color: $--color-white-grey;
+
+    input {
+      border: none;
+    }
   }
 }
