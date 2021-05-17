@@ -18,9 +18,9 @@ class Form extends Component {
         </div>
         <Button type={type} />
         <div className="Divide">
-          <div className="DivideLine"></div>
+          <div></div>
           <h6>또는</h6>
-          <div className="DivideLine"></div>
+          <div></div>
         </div>
         <div className="Facebook" href="#">
           <i className="fab fa-facebook-square"></i>
