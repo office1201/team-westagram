@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import Form from "./Components/Form";
 import "../../Styles/reset.scss";
 import "../../Styles/common.scss";
-import "./Modal.scss";
+import "./Login.scss";
 
-export default class Modal extends Component {
+export default class Login extends Component {
   render() {
     return (
-      <div className="Modal">
+      <div className="Login">
         <Form type="로그인" data={signInData} />
       </div>
     );
