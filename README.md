@@ -31,7 +31,10 @@
   - `email`과 `password` 검증을 통한 로그인 버튼 활성화 기능 추가
   - `setTimeout`을 활용하여 비동기적으로 실감나게 화면이동 이벤트 구현(페이지 이동)
 
-    <img width="649" alt="스크린샷 2021-05-15 오후 11 46 30" src="https://user-images.githubusercontent.com/75716128/118368850-8644fc80-b5dd-11eb-9179-aba219ab050a.png">
+<div display="flex">
+<img width="450" alt="스크린샷 2021-05-18 오전 11 10 16" src="https://user-images.githubusercontent.com/75716128/118580013-10ea4f00-b7ca-11eb-81e0-e3115f6097ed.png">
+<img width="450" alt="스크린샷 2021-05-18 오전 11 10 36" src="https://user-images.githubusercontent.com/75716128/118580015-1182e580-b7ca-11eb-8c35-8d58686e13ed.png">
+</div>
 
 ## Scripts
 
