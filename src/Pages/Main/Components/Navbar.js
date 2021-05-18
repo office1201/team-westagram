@@ -8,7 +8,7 @@ class Navbar extends Component {
     isActive: "",
   };
 
-  handleClick = () => {
+  handleClick = (e) => {
     const { isActive } = this.state;
     !isActive ? this.setState({ isActive: "isActive" }) : this.setState({ isActive: "" });
   };
@@ -31,7 +31,7 @@ class Navbar extends Component {
             <img
               onClick={this.handleClick}
               className={isActive}
-              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/66802565_354441191910711_5735933316343791616_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=V727mSkKilkAX9Grq8l&edm=AGBWlhEBAAAA&ccb=7-4&oh=5b76c4c237f40d5ed4affa2d67c8b6ba&oe=60C7F464&_nc_sid=57d425"
+              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/164807560_952888125450516_7510156972160703983_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=szlVRQt3y3sAX-Ovhn9&edm=ABfd0MgBAAAA&ccb=7-4&oh=7f1691ccd053c3b578aa7a114399626f&oe=60C8D155&_nc_sid=7bff83"
               alt="프로필 메뉴 사진입니다."
             />
             {isActive && (

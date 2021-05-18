@@ -2,10 +2,12 @@
 
 .Navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0px;
   width: 100%;
-  padding: 4px 0px;
+  padding: 4px 145px;
   border-bottom: 1px solid $--color-grey;
   background-color: $--color-white;
 
@@ -61,11 +63,12 @@
       }
 
       .Menus {
-        width: 172px;
+        width: 173px;
         margin-top: 4px;
         border: 1px solid $--color-grey;
         border-radius: 4px;
         background-color: $--color-white;
+        z-index: 10;
       }
     }
   }

@@ -1,0 +1,31 @@
+.MyTab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .MyTabLogo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 56px;
+      height: 56px;
+      margin-right: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    strong {
+      color: var(--color--white-black);
+      font-size: 15px;
+    }
+
+    .MyName {
+      color: var(--color-dark-grey);
+    }
+  }
+  .follow {
+    color: var(--color-blue);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+  }
+}

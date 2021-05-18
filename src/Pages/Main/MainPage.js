@@ -5,6 +5,7 @@ import "../../Styles/reset.scss";
 import "../../Styles/common.scss";
 import "./MainPage.scss";
 import Feeds from "./Feeds";
+import Sidebar from "./Components/Sidebar";
 
 class MainPage extends Component {
   render() {
@@ -13,6 +14,7 @@ class MainPage extends Component {
         <Navbar title="Westagram" />
         <MainPageLayout>
           <Feeds />
+          <Sidebar />
         </MainPageLayout>
       </>
     );
