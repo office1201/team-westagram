@@ -1,0 +1,41 @@
+@import "../../../Styles/common.scss";
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 40px;
+  border-bottom: 1px solid $--color-grey;
+  background-color: $--color-white;
+
+  h1 {
+    color: $--color-blue;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 30px;
+    border: 1px solid $--color-grey;
+    border-radius: 2px;
+    background-color: $--color-white-grey;
+    input {
+      border: none;
+      background-color: $--color-white-grey;
+    }
+
+    i {
+      color: $--color-dark-grey;
+      font-size: 13px;
+      margin-left: 4px;
+    }
+  }
+
+  .Icons {
+    display: flex;
+  }
+}
