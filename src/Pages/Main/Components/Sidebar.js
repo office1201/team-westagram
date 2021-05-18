@@ -13,8 +13,8 @@ class Sidebar extends Component {
             {MyTabData.map((data) => (
               <MyTab data={data} />
             ))}
-            <div class="Friends">
-              <div class="FriendsText">
+            <div className="Friends">
+              <div className="FriendsText">
                 <strong>회원님을 위한 추천</strong>
               </div>
               <ul>

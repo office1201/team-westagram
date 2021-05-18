@@ -16,7 +16,7 @@ class MyTab extends Component {
             <span className="MyName">{nickname}</span>
           </div>
         </div>
-        <button class="follow">{follow}</button>
+        <button className="Follow">{follow}</button>
       </article>
     );
   }
