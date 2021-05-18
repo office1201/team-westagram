@@ -4,13 +4,17 @@ import Navbar from "./Components/Navbar";
 import "../../Styles/reset.scss";
 import "../../Styles/common.scss";
 import "./MainPage.scss";
+import Feeds from "./Feeds";
 
 class MainPage extends Component {
   render() {
     return (
-      <MainPageLayout>
+      <>
         <Navbar title="Westagram" />
-      </MainPageLayout>
+        <MainPageLayout>
+          <Feeds />
+        </MainPageLayout>
+      </>
     );
   }
 }

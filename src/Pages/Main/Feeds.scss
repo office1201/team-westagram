@@ -1,0 +1,21 @@
+@import "../../Styles/common.scss";
+
+.Feeds {
+  width: 614px;
+  height: 100%;
+  margin-right: 28px;
+  border: 1px solid $--color-grey;
+  background-color: $--color-white;
+
+  .FeedsContainer {
+    height: 118px;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    border: 1px solid $--color-grey;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
