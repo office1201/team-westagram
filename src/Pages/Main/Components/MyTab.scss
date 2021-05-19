@@ -1,3 +1,5 @@
+@import "../../../Styles/common.scss";
+
 .MyTab {
   display: flex;
   justify-content: space-between;
@@ -15,17 +17,17 @@
       cursor: pointer;
     }
     strong {
-      color: var(--color--white-black);
+      color: black;
       font-size: 15px;
     }
 
     .MyName {
-      color: var(--color-dark-grey);
+      color: $--color-dark-grey;
     }
   }
   .Follow {
-    color: var(--color-blue);
-    font-size: var(--font-size-small);
+    color: $--color-blue;
+    font-size: $--font-size-small;
     font-weight: 600;
   }
 }

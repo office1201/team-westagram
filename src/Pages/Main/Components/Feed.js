@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./Feed.scss";
+import Header from "./Feed/Header";
+import Img from "./Feed/Img";
+import Content from "./Feed/Content";
 
 class Feed extends Component {
   render() {
-    const { url, name } = this.props.data;
     return (
-      <li className="Feed">
-        <div className="FeedLine">
-          <img src={url} alt={name} />
-        </div>
-        <span>{name}</span>
-      </li>
+      <div className="FeedContainer">
+        <Header />
+        <Img />
+        <Content />
+      </div>
     );
   }
 }

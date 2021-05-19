@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FeedsList from "./FeedsList";
 import Feed from "./Feed";
 import "./Feeds.scss";
 
@@ -6,13 +7,18 @@ class Feeds extends Component {
   render() {
     return (
       <section className="Feeds">
-        <div className="FeedsContainer">
+        <article className="FeedsContainer">
           <ul>
             {FeedsData.map((feed, idx) => (
-              <Feed key={idx} data={feed} />
+              <FeedsList key={idx} data={feed} />
             ))}
           </ul>
-        </div>
+        </article>
+        <article className="Feed">
+          {FeedsData.map((feed, idx) => (
+            <Feed key={idx} data={feed} />
+          ))}
+        </article>
       </section>
     );
   }

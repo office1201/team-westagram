@@ -3,53 +3,13 @@
 /* Variable(global) */
 :root {
   /* Color */
-  --color-white-grey: #fafafa;
-  --color-grey: #dbdbdb;
-  --color-dark-grey: #8e8e8e;
-  --color-white: #ffffff;
-  --color-white-blue: #c0dffd;
-  --color-blue: #0095f6;
-  --color-dark-blue: #00376b;
-  --color-pink: #c72e8e;
-  --color--white-black: #262626;
-  --color--black: #000000;
 
   /* Font size */
-  --font-size-2x-large: 24px;
-  --font-size-large: 16px;
-  --font-size-medium: 14px;
-  --font-size-small: 13px;
-  --font-size-micro: 12px;
 
   /* Annimation */
   --annimation-duration: 700ms;
 }
 
-/* Universal tags */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  height: 100vh;
-  background-color: var(--color-white-grey);
-}
-
-ul {
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: var(--font-size-large);
-  padding: 0;
-}
 /* Typography */
 a {
   text-decoration: none;

@@ -1,6 +1,10 @@
+@import "../../../Styles/common.scss";
+
 .Sidebar {
+  position: fixed;
   width: 293px;
   height: 100vh;
+  right: 150px;
 
   .SidebarContainer {
     width: 100%;
@@ -15,7 +19,7 @@
 
       .FriendsText {
         margin: 30px 0px 10px 0px;
-        color: var(--color-dark-grey);
+        color: $--color-dark-grey;
       }
     }
   }

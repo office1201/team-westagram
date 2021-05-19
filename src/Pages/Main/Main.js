@@ -13,13 +13,26 @@ class Main extends Component {
     };
   }
 
-  handleCommentInput = (e) => {
+  //   <input
+  //   onChange={this.handleChange}
+  //   onKeyUp={this.clickBtn}
+  //   onKeyDown={this.checkComment}
+  //   type="text"
+  //   class="feed__content__chat-input"
+  //   placeholder="댓글 달기..."
+  // />
+  // <button
+  //   onClick={this.addComment}
+  //   className={this.state.isActiveBtn ? "feed__content__chat-button" : "feed__content__chat-button-change-btn"}
+  // >
+
+  handleChange = (e) => {
     this.setState({
       comment: e.target.value,
     });
   };
 
-  addCommentList = () => {
+  addComment = () => {
     const comment = { str: this.state.comment };
     this.setState({
       commentArr: this.state.commentArr.concat(comment),
@@ -31,7 +44,7 @@ class Main extends Component {
     if (e.key === "Backspace" || this.state.comment.length === 0) {
       return;
     } else if (e.key === "Enter") {
-      this.addCommentList();
+      this.addComment();
     }
   };
 
