@@ -31,7 +31,7 @@ class Navbar extends Component {
             <img
               onClick={this.handleClick}
               className={isActive}
-              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/164807560_952888125450516_7510156972160703983_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=szlVRQt3y3sAX-Ovhn9&edm=ABfd0MgBAAAA&ccb=7-4&oh=7f1691ccd053c3b578aa7a114399626f&oe=60C8D155&_nc_sid=7bff83"
+              src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/164807560_952888125450516_7510156972160703983_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=szlVRQt3y3sAX9z5_h1&edm=AIQHJ4wBAAAA&ccb=7-4&oh=00de4288109e10d98e2df70d327bf827&oe=60C8D155&_nc_sid=7b02f1"
               alt="프로필 메뉴 사진입니다."
             />
             {isActive && (
